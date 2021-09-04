@@ -1,5 +1,7 @@
 package com.blz.test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 import com.blz.userdetails.UserRegistration;
@@ -16,22 +18,32 @@ public class TestEmail {
 	public static void main(String[] args) {
 		UserRegistration userRegistration = new UserRegistration();
 		Scanner sc = new Scanner(System.in);
-		int choice = 0;
-		while (choice != 2) {
-			{
-				System.out.println("1.Enter Email ID\n2.exit");
-				choice = sc.nextInt();
-				switch (choice) {
-				case 1:
-					System.out.println("Enter Your Email");
-					String userEmail = sc.next();
-					validTest(userRegistration, userEmail);
-					break;
-				default:
-					System.out.println("You came default");
-					break;
-				}
-			}
+		List<String> emailIds = Arrays.asList(
+			"abc@yahoo.com",
+			"abc-100@yahoo.com",
+			"abc-100@yahoo.com",
+			"abc111@abc.com",
+			"abc-100@abc.net",
+			"abc.100@abc.com.au",
+			"abc@1.com",
+			"abc@gmail.com.com",
+			"abc+100@gmail.com",
+			"abc",
+			"abc@.com.my",
+			"abc123@gmail.a",
+			"abc123@.com",
+			"abc123@.com.com",
+			".abc@abc.com",
+			"abc()*@gmail.com",
+			"abc@%*.com",
+			"abc..2002@gmail.com",
+			"abc.@gmail.com",
+			"abc@abc@gmail.com",
+			"abc@gmail.com.1a",
+			"abc@gmail.com.aa.au");
+		
+		for (String userEmail : emailIds) {
+			validTest(userRegistration,userEmail);	
 		}
 	}
 }
