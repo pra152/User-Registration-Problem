@@ -15,5 +15,9 @@ public class UserRegistration {
 	public boolean firstName(String userFirstName) {
 		return isValidPattern(userFirstName, Constants.FIRST_NAME_REGEX);
 	}
+	
+	public boolean lastName(String userLastName) {
+		return isValidPattern(userLastName, Constants.LAST_NAME_REGEX);
+	}
 
 }
