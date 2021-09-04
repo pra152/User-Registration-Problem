@@ -16,6 +16,7 @@ public class TestPassword {
 		
 		validTest(userRegistration, "Pravat@1234");
 		validTest(userRegistration, "Bridge#1");
+		validTest(userRegistration, "Pkdas@12");
 	}
 
 }
