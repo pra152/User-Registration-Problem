@@ -14,10 +14,9 @@ public class TestPassword {
 	public static void main(String[] args) {
 		UserRegistration userRegistration = new UserRegistration();
 		
-		validTest(userRegistration, "Pravat#1234");
+		validTest(userRegistration, "Pravat@1234");
 		validTest(userRegistration, "pk@1267");
 		validTest(userRegistration, "Blz46");
-		validTest(userRegistration, "hdskj13233");
 	}
 
 }
