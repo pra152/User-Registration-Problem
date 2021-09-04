@@ -23,5 +23,9 @@ public class UserRegistration {
 	public boolean EmailID(String userEmail) {
 		return isValidPattern(userEmail, Constants.EMAIL_ID_REGEX);
 	}
+	
+	public boolean MobileNumber(String userMobile) {
+		return isValidPattern(userMobile, Constants.MOBILE_NUMBER_REGEX);
+	}
 
 }
