@@ -15,8 +15,7 @@ public class TestPassword {
 		UserRegistration userRegistration = new UserRegistration();
 		
 		validTest(userRegistration, "Pravat@1234");
-		validTest(userRegistration, "pk@1267");
-		validTest(userRegistration, "Blz46");
+		validTest(userRegistration, "Bridge#1");
 	}
 
 }
