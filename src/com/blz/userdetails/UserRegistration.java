@@ -19,5 +19,9 @@ public class UserRegistration {
 	public boolean lastName(String userLastName) {
 		return isValidPattern(userLastName, Constants.LAST_NAME_REGEX);
 	}
+	
+	public boolean EmailID(String userEmail) {
+		return isValidPattern(userEmail, Constants.EMAIL_ID_REGEX);
+	}
 
 }
